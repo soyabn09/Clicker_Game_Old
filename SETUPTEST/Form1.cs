@@ -18,7 +18,6 @@ namespace SETUPTEST
         int easy = 0;
         int medium = 0;
         int hard = 0;
-        int test = 0;
         public Form1()
         {
             InitializeComponent();
