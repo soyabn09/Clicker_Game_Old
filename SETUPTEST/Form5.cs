@@ -33,12 +33,12 @@ namespace SETUPTEST
             label2.Text = "YOU CAN APPLY ANY AMOUNT OF TIME TO YOUR SELF";
             timeleft = 60;
             textBox1.Text = "60";
-            if (!File.Exists(@"C:\TEST INC\CUSTOM.txt"))
+            if (!File.Exists(@"C:\CLICKER\CUSTOM.txt"))
             {
                 string num = "0";
-                File.AppendAllText(@"C:\TEST INC\CUSTOM.txt", num);
+                File.AppendAllText(@"C:\CLICKER\CUSTOM.txt", num);
             }
-            string text = File.ReadAllText(@"C:\TEST INC\CUSTOM.txt");
+            string text = File.ReadAllText(@"C:\CLICKER\CUSTOM.txt");
             label4.Text = text;
         }
 
@@ -86,7 +86,7 @@ namespace SETUPTEST
 
 
 
-                    File.WriteAllText(@"C:\TEST INC\CUSTOM.txt", text);
+                    File.WriteAllText(@"C:\CLICKER\CUSTOM.txt", text);
                 }
 
             }
@@ -135,7 +135,7 @@ namespace SETUPTEST
             }
             catch (OverflowException)
             {
-                MessageBox.Show("The number is too low or too high \nNumber reset to default");
+                MessageBox.Show("The number is either too low or too high \nNumber reset to default");
                 timeleft = 60;
                 textBox1.Text = "60";
             }
@@ -144,7 +144,7 @@ namespace SETUPTEST
         private void button3_MouseClick(object sender, MouseEventArgs e)
         {
             string num = "0";
-            File.WriteAllText(@"C:\TEST INC\CUSTOM.txt", num);
+            File.WriteAllText(@"C:\CLICKER\CUSTOM.txt", num);
             label4.Text = num;
         }
 

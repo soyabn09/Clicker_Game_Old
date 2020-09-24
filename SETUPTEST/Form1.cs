@@ -27,7 +27,7 @@ namespace SETUPTEST
         {
             label1.Text = "MAIN MENU";
 
-            Directory.CreateDirectory("C:\\TEST INC");
+            Directory.CreateDirectory("C:\\CLICKER");
         }
 
         private void GAME(object obj)
@@ -92,6 +92,11 @@ namespace SETUPTEST
             th = new Thread(CREDITS);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,12 +46,12 @@ namespace SETUPTEST
                 label1.Text = "0";
                 label2.Text = "YOU HAVE A MINUTE TO CLICK AS FAST AS YOU CAN";
                 timeleft = 60;
-                if (!File.Exists(@"C:\TEST INC\EASY.txt"))
+                if (!File.Exists(@"C:\CLICKER\EASY.txt"))
                 {
                     string num = "0";
-                    File.AppendAllText(@"C:\TEST INC\EASY.txt", num);
+                    File.AppendAllText(@"C:\CLICKER\EASY.txt", num);
                 }
-                string text = File.ReadAllText(@"C:\TEST INC\EASY.txt");
+                string text = File.ReadAllText(@"C:\CLICKER\EASY.txt");
                 label4.Text = text;
             }
             else if (Medium == 1)
@@ -59,12 +59,12 @@ namespace SETUPTEST
                 label1.Text = "0";
                 label2.Text = "YOU HAVE A 30 SECONDS TO CLICK AS FAST AS YOU CAN";
                 timeleft = 30;
-                if (!File.Exists(@"C:\TEST INC\MEDIUM.txt"))
+                if (!File.Exists(@"C:\CLICKER\MEDIUM.txt"))
                 {
                     string num = "0";
-                    File.AppendAllText(@"C:\TEST INC\MEDIUM.txt", num);
+                    File.AppendAllText(@"C:\CLICKER\MEDIUM.txt", num);
                 }
-                string text = File.ReadAllText(@"C:\TEST INC\MEDIUM.txt");
+                string text = File.ReadAllText(@"C:\CLICKER\MEDIUM.txt");
                 label4.Text = text;
             }
             else if (Hard == 1)
@@ -72,12 +72,12 @@ namespace SETUPTEST
                 label1.Text = "0";
                 label2.Text = "YOU HAVE A 15 SECONDS TO CLICK AS FAST AS YOU CAN";
                 timeleft = 15;
-                if (!File.Exists(@"C:\TEST INC\HARD.txt"))
+                if (!File.Exists(@"C:\CLICKER\HARD.txt"))
                 {
                     string num = "0";
-                    File.AppendAllText(@"C:\TEST INC\HARD.txt", num);
+                    File.AppendAllText(@"C:\CLICKER\HARD.txt", num);
                 }
-                string text = File.ReadAllText(@"C:\TEST INC\HARD.txt");
+                string text = File.ReadAllText(@"C:\CLICKER\HARD.txt");
                 label4.Text = text;
             }
         }
@@ -127,15 +127,15 @@ namespace SETUPTEST
 
                     if (Easy == 1)
                     {
-                        File.WriteAllText(@"C:\TEST INC\EASY.txt", text);
+                        File.WriteAllText(@"C:\CLICKER\EASY.txt", text);
                     }
                     else if (Medium == 1)
                     {
-                        File.WriteAllText(@"C:\TEST INC\MEDIUM.txt", text);
+                        File.WriteAllText(@"C:\CLICKER\MEDIUM.txt", text);
                     }
                     else if (Hard == 1)
                     {
-                        File.WriteAllText(@"C:\TEST INC\HARD.txt", text);
+                        File.WriteAllText(@"C:\CLICKER\HARD.txt", text);
                     }
                 }
 
@@ -176,17 +176,17 @@ namespace SETUPTEST
             string num = "0";
             if (Easy == 1)
             {
-                File.WriteAllText(@"C:\TEST INC\EASY.txt", num);
+                File.WriteAllText(@"C:\CLICKER\EASY.txt", num);
                 label4.Text = num;
             }
             else if (Medium == 1)
             {
-                File.WriteAllText(@"C:\TEST INC\MEDIUM.txt", num);
+                File.WriteAllText(@"C:\CLICKER\MEDIUM.txt", num);
                 label4.Text = num;
             }
             else if (Hard == 1)
             {
-                File.WriteAllText(@"C:\TEST INC\HARD.txt", num);
+                File.WriteAllText(@"C:\CLICKER\HARD.txt", num);
                 label4.Text = num;
             }
         }

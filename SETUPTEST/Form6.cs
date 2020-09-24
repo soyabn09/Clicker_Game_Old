@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Diagnostics;
 
 namespace SETUPTEST
 {
@@ -32,7 +33,7 @@ namespace SETUPTEST
         private void Form6_Load(object sender, EventArgs e)
         {
             // label1 will provide the user with the developer of the program
-            label1.Text = "DEVELOPER: SOYAB NANDHLA \n \nThis program was created only by me and will get constant updates if more features are wanted. \nFeatures can be suggested by conatacting me and bugs will need to be emailed to me if found, preferably with screenshots. \nThe donate button gives me support in what I can do and helps me in other bigger projects in the future.";
+            label1.Text = "DEVELOPER: SOYAB NANDHLA \n\nThis program was created only by me and will get constant updates if more features are wanted. \nFeatures can be suggested by contacting me and bugs will need to be emailed to me if found, preferably with screenshots. \nThe donate button gives me support in what I can do and helps me in other bigger projects in the future.";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,7 +48,7 @@ namespace SETUPTEST
 
         private void button2_MouseClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("SORRY, NOT IMPLEMENTED YET!", "WARNING!");
+            Process.Start("https://paypal.me/SOYABN?locale.x=en_GB");
         }
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
