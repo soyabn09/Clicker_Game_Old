@@ -71,5 +71,15 @@ namespace SETUPTEST
             th7.SetApartmentState(ApartmentState.STA);
             th7.Start();
         }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
