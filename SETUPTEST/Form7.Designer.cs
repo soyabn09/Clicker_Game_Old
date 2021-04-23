@@ -57,7 +57,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "1.0.1";
+            this.label2.Text = "2.0.1";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
@@ -89,7 +89,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(109, 17);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Version - 1.0.0 :";
+            this.label9.Text = "Version - 2.0.0 :";
             // 
             // label4
             // 
@@ -120,7 +120,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 17);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Version - 1.0.1 :";
+            this.label5.Text = "Version - 2.0.1 :";
             this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // Form7
